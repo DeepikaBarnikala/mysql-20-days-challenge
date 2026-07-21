@@ -1,0 +1,23 @@
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| college            |
+| company            |
+| db4                |
+| details            |
+| information_schema |
+| mysql              |
+| performance_schema |
+| psf4               |
+| school1            |
+| student            |
+| students           |
+| sys                |
+| walmartsales       |
+| xyz                |
++--------------------+
+14 rows in set (0.17 sec)
+
+-->DML Command: insert, update, delete 
+

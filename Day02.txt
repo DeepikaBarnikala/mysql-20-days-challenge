@@ -1,0 +1,74 @@
+FMS vs DBMS
+----------------------------
+          FMS                                                   DBMS
+
+1.high data redundancy(duplicate data)                  reduce data redundancy
+ 
+2.difficult to maintain and update.                     easy to maintain ad update.
+
+3.security is limited.                                  provides strong security mechanism.
+ 
+4.data sharing is difficult.                            multiple users can access data
+                                                        simultaneously.
+5.no relationship between files.                        supports relationship between tables.
+
+6.backup and recovery is difficult.                     provides backup and recovery.
+
+7.suitable for small applications.                      suitable for small, medium and
+                                                        large applications.
+------------------------------------------------------------------------------------
+*What is Data, field, record, database ?
+
+Data-->Raw facts or figures without context
+eg:101,malli,60000,hybd.
+
+Field--> Smallest unit of data in DB(Column/Attribute)
+eg: empID, empname.etc.
+
+Record-->Collection of related fields(row/tuple).
+eg:(101,Sumanth,50000,Bnglr)
+
+Database--> Organized collection of related records stored together.
+eg: In employee database contain all emp details.
+
+DBMS--> Its a software used to create, store, retrieve, update and manage databases.
+
+
+Client-Server Architecture:
+---------------------------
+In CSA they have 3 components such as
+Client
+Server
+Protocol.
+
+Client--> The role of the client in Client-server Architecture is to send Request to the server and to get the response from the server.
+
+Server--> It is a software. The role of the server in CSA is to take request from the Clients if the request is valid request then it will generate some response we can handover that response to client. If client request is not a valid Request then it will raise the errors.
+
+Protocol-->It has a set of rules and regulations. The role of the protocol in client-server-Architecture is to send request from client to server.
+
+Data Models in DBMS:
+------------------------------------
+It defines how data is stored , organised and manipulated in a database.
+
+1.Physical Data model: Describes how data is physically stored in storage devices
+audience: Database Administrator.
+
+2.Logical Data Model: Defines the structure of data(entities,attributes,relationship). It is Independent of physical storage areas.
+Audience: Developers and database Architects.
+
+3.Hierarchical Data Model: Data is represented as a tree structure. (parent-child relationship).
+
+eg:  company
+        |
+     departments
+        |
+     employees
+
+4.Network Data Model: Data is represented as graph with records(nodes) and relationships(edges).
+eg: Student enrolled in multiple courses, courses teach by multiple professors.
+
+5. Relational Data Model(RDBMS): Data is stored in Tables(relations) with rows(tuple) and columns(attributes).
+
+eg: Student(id, name, age, section)
+    Department(deptId, deptName)

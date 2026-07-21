@@ -1,0 +1,137 @@
+SQL Identifiers:
+-------------------------
+SQL Identifiers are names used to identify database objects such as database name, table names, col names, view names, index names, constraints, triggers, stored procedures...etc.
+
+While we are declaring identifiers we have to follow some rules and regulations.
+1. The only allowed characters to define identifiers a-z , A-Z or 0-9, _, $'
+2. must be begin with letter or underscore(_).
+3. we can't declare identifiers with reserved words.
+4. spaces are not considered to declare identifiers.
+5. these are case sensitive.
+6. max length to declare a identifier is 15 char.
+
+
+SQL:
+-----------------
+Structured Query Language is standardized programming language specially designed for managing and manipulating relational databases and it provides a declarative syntax that allows users to define what data they want to retrieve, insert, update or delete without specifying exactly how database should execute these operations.
+
+SQL Commands:
+--------------------
+1. DDL (Data Definition Language):
+Defines and manages the structure of the database.
+
+-->CREATE → Used to create new database objects (tables, views, indexes).
+Purpose: establish structure.
+
+-->ALTER → Used to modify existing objects (add/remove columns, change data types).
+Purpose: adjust schema without recreating.
+
+-->DROP → Removes database objects permanently.
+Purpose: delete unwanted structures.
+
+-->TRUNCATE → Removes all data from a table but keeps the structure intact.
+Purpose: quickly clear data while preserving schema.
+
+2. DML (Data Manipulation Language):
+Handles/Manages the actual data inside tables.
+
+-->INSERT → Adds new records into a table. Purpose: populate database with data.
+
+-->UPDATE → Modifies existing records. Purpose: keep data current and accurate.
+
+-->DELETE → Removes records from a table. Purpose: eliminate unnecessary or outdated data.
+
+-->LOCK → Controls concurrency by locking a table restrict accesses from other transactions while it is being modifies.
+Purpose of the LOCK Command:
+The LOCK command is used to control concurrent access to database objects (like tables or rows).
+Its main role is to prevent conflicts when multiple users or processes try to read/write the same data at the same time.
+By locking, the database ensures consistency and integrity during operations.
+
+3. DQL (Data Query Language):
+Focused on retrieving/fetching data from db.
+
+-->SELECT → Extracts data from one or more tables.
+Purpose: view, analyze, and report information.
+(Note: SELECT is the only command in DQL.)
+
+4. DCL (Data Control Language):
+Controls access and permissions.
+
+-->GRANT → Provides specific privileges to users (like read, write, execute).
+Purpose: allow controlled access.
+
+->REVOKE → Removes previously granted privileges.
+Purpose: restrict or withdraw access when needed.
+
+5. TCL (Transaction Control Language):
+Manages transactions to ensure data integrity.
+
+-->COMMIT → Saves all changes made during a transaction permanently and making them visible to other user.
+Purpose: confirm successful operations.
+
+-->ROLLBACK → Undoes changes made during a transaction.
+Purpose: recover from errors or cancel operations.
+
+-->SAVEPOINT → Creates a checkpoint within a transaction.
+Purpose: allow partial rollback to a specific point instead of undoing everything.
+
+📌 Database Commands
+Create Database (syntax & example):
+
+CREATE DATABASE database_name;
+CREATE DATABASE school;
+Show Databases:
+
+SHOW DATABASES;
+Use Database:
+
+sql
+USE database_name;
+USE school;
+
+📌 Table Commands
+Create Table (syntax & example):
+
+CREATE TABLE table_name (
+    column1 datatype,
+    column2 datatype,
+    column3 datatype
+);
+
+CREATE TABLE students (
+    student_id INT,
+    name VARCHAR(100),
+    age INT
+);
+Show Tables:
+SHOW TABLES;
+
+📌 Commonly Used MySQL Data Types
+Category    Data Types (Examples)
+--------    ------------------------
+Numeric	    INT, BIGINT, DECIMAL, FLOAT, DOUBLE
+String	    CHAR(n), VARCHAR(n), TEXT, ENUM, SET
+Date/Time   DATE, DATETIME, TIMESTAMP, TIME, YEAR
+Boolean	    BOOLEAN (alias for TINYINT(1))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
