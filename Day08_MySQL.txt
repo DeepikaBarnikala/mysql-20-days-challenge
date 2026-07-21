@@ -268,5 +268,5 @@ mysql> SELECT NAME,PRICE,QTY,QTY%50!=0 AS NMO50 FROM PRODUCT_;
 | Crayons      |  90.00 |   55 |     1 |
 +--------------+--------+------+-------+
 10 rows in set (0.00 sec)
-
+Mysql
 mysql> Terminal close -- exit!
